@@ -4,7 +4,7 @@ include 'tri_req.php';
 
 $tri = new tri();
 $imei = "868880043302499";
-echo "Asupkeun no telepon na anying : ";
+echo "Asupkeun no telepon na anying teh sia goblog : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
