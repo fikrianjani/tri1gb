@@ -20,7 +20,6 @@ for($id1 = 1500; $id1 < 1600;$id1++)
 {
   $gas = $tri->claim($bearer,$id,$id1);
   echo $gas . "\r\n";
-  sleep(1);
 }
 
 
