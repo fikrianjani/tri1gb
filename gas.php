@@ -4,7 +4,7 @@ include 'tri_req.php';
 
 $tri = new tri();
 $imei = "868880043302499";
-echo "Asupkeun no telepon na anying teh sia goblog : ";
+echo "Asupkeun no telepon na anying : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
 echo $otp[1] . "\r\n";
@@ -20,6 +20,7 @@ for($id1 = 1500; $id1 < 1600;$id1++)
 {
   $gas = $tri->claim($bearer,$id,$id1);
   echo $gas . "\r\n";
+  sleep(3);
 }
 
 
